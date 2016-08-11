@@ -20,9 +20,7 @@
             android:gravity="center"
             android:textSize="32sp"
             android:text="Driving Quiz"
-            android:layout_marginBottom="16dp"
-
-            />
+            android:layout_marginBottom="16dp" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -51,19 +49,19 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/answer1"
+                    android:id="@+id/question1answer1"
                     android:text="Next to other cars traveling at the same speed"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/answer2"
-                    android:layout_below="@id/answer1"
+                    android:id="@+id/question1answer2"
+                    android:layout_below="@id/question1answer1"
                     android:text="A little behind other cars traveling at the same speed"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/answer3"
-                    android:layout_below="@id/answer2"
+                    android:id="@+id/question1answer3"
+                    android:layout_below="@id/question1answer2"
                     android:text="Away from other cars both in front and behind and side to side if possible"/>
             </RadioGroup>
         </RelativeLayout>
@@ -178,7 +176,7 @@
                 android:layout_below="@id/question4text"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="If a person is standing on the sidewalk near a crosswalk that you are approaching, you should…"/>
+                android:text="Your car’s horn is a safety device used to…"/>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -187,19 +185,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/question4answer1"
-                    android:text="Quickly apply the brakes and make eye contact with the pedestrian"/>
+                    android:text="Warn other drivers and pedestrians to slow down"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/question4answer2"
                     android:layout_below="@id/question4answer1"
-                    android:text="Slowly come to a stop and wave the pedestrian across the street"/>
+                    android:text="Warn other drivers and pedestrians to speed up"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/question4answer3"
                     android:layout_below="@id/question4answer2"
-                    android:text="Continue driving unless the person enters the crosswalk"/>
+                    android:text="Warn other drivers and pedestrians to prevent an impending accident"/>
             </RadioGroup>
         </RelativeLayout>
 
@@ -289,7 +287,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/question6answer3"
                     android:layout_below="@id/question6answer2"
-                    android:text="Turn on your hazard lights and assist the driver in the double parked car"/>
+                    android:text="Turn on your hazard lights and stop to assist the driver in the double parked car"/>
             </RadioGroup>
         </RelativeLayout>
         <RelativeLayout
@@ -421,7 +419,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/question9answer3"
                     android:layout_below="@id/question9answer2"
-                    android:text="Turn on your hazard lights and assist the driver in the double parked car"/>
+                    android:text="Checking text messages"/>
             </RadioGroup>
         </RelativeLayout>
 
@@ -445,7 +443,7 @@
                 android:layout_below="@id/question10text"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="The rigIt is unsafe to use your cell phone while driving, except when…"/>
+                android:text="It is unsafe to use your cell phone while driving, except when…"/>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -469,6 +467,11 @@
                     android:text="Using a hands-free device in the intended manner"/>
             </RadioGroup>
         </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Answers"
+            android:onClick="submitAnswer"/>
 
     </LinearLayout>
 </ScrollView>
