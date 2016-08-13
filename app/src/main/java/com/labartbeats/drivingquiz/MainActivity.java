@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         TextView question7answered = (TextView) findViewById(R.id.question7answer);
         CheckBox question8answer1selected = (CheckBox) findViewById(R.id.question8answer1);
         CheckBox question8answer2selected = (CheckBox) findViewById(R.id.question8answer2);
+        CheckBox question8answer3selected = (CheckBox) findViewById(R.id.question8answer3);
+        CheckBox question8answer4selected = (CheckBox) findViewById(R.id.question8answer4);
         CheckBox question8answer5selected = (CheckBox) findViewById(R.id.question8answer5);
         RadioButton question9selected = (RadioButton) findViewById(R.id.question9answer2);
         RadioButton question10selected = (RadioButton) findViewById(R.id.question10answer3);
@@ -66,16 +68,8 @@ public class MainActivity extends AppCompatActivity {
             quizScore = quizScore + 10;
         }
 
-        if (question8answer1selected.isChecked()){
-            quizScore = quizScore + 3;
-        }
-
-        if (question8answer2selected.isChecked()){
-            quizScore = quizScore + 3;
-        }
-
-        if (question8answer5selected.isChecked()){
-            quizScore = quizScore + 4;
+        if (question8answer1selected.isChecked() && question8answer2selected.isChecked() && question8answer5selected.isChecked() && !question8answer3selected.isChecked() && !question8answer4selected.isChecked()){
+            quizScore = quizScore + 10;
         }
 
         if (question9selected.isChecked()){
