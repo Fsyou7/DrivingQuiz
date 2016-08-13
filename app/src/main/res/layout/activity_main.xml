@@ -314,6 +314,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/question7answer"
                 android:layout_below="@id/question7value"
                 android:hint="Answer"
                 android:inputType="textMultiLine">
@@ -413,7 +414,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/question9answer2"
                     android:layout_below="@id/question9answer1"
-                    android:text="Entering and exiting the freeway"/>
+                    android:text="Only entering and exiting the freeway"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
